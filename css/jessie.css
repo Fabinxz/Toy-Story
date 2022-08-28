@@ -144,7 +144,7 @@ span
     grid-row: 1/2;
     grid-column: 3/4 ;
     color: var(--font-color);
-    background: var(--color-primary);
+    background: var(--color-accent);
     padding: 10px 20px;
     display: inline-block;
     width: 80px;
@@ -169,22 +169,20 @@ span
 .theme-light
 {
     --color-primary: #000;
-    --color-secondary: #fff;
-    --color-accent: #000;
+    --color-secondary: rgba(248, 242, 242, 0.781);
+    --color-accent: #121212;
     --shadow-color: rgba(0,0,0,.5);
     --font-color: #fff;
-    --back-color: hsla(52, 100%, 51%, 1);
     --box-color: rgba(0,0,0,.5);
 }
 
 .theme-dark
 {
     --color-primary: #fff;
-    --color-secondary: #000;
-    --color-accent: #fff;
+    --color-secondary: #121212;
+    --color-accent: rgba(248, 242, 242, 0.781);
     --shadow-color: rgba(248, 242, 242, 0.5);
     --font-color: #000;
-    --back-color: #000;
     --box-color: #000;
 }
 
@@ -252,7 +250,7 @@ span
 {
     .container
     {
-        grid-template-rows: 160px 800px 1320px 290px 200px 200px;
+        grid-template-rows: 160px 200px 450px 750px 290px 250px;
         grid-template-columns: 1fr;
     }
 
@@ -265,34 +263,35 @@ span
 
     #switch
     {
-        grid-row: 6/7;
+        grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 155px;
+        margin-left: 150px;
         margin-top: 30px;
     }
 
     #jessie
     {
-        grid-row: 2/3;
+        grid-row: 3/4;
         grid-column: 1/2;
         width: 380px;
+        background-image: url(/assets/jessiem.png);
         background-position-x: 50%;
     }
 
     h2
     {
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: 1/2;
         width: 325px;
         margin-top: 25px;
-        font-size: 2.8em;
+        font-size: 2em;
     }
 
     .video1
     {
         width: 375px;
         height: 210px;
-        grid-row: 4/5;
+        grid-row: 5/6;
         margin-left: 5px;
         margin-top: 40px;
     }
@@ -301,7 +300,7 @@ span
     {
         width: 375px;
         height: 210px;
-        grid-row: 5/6;
+        grid-row: 6/7;
         grid-column: 1/2;
         margin-left: 5px;
         margin-top: 0px;

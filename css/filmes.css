@@ -24,7 +24,7 @@
     background-color: var(--oi);
     background-repeat: no-repeat;
     transition: 0.5s;
-    margin-top: 40px;
+    margin-top: 25px;
     cursor: pointer;
 }
 
@@ -38,7 +38,7 @@
 .container
 {
     width: 100%;
-    padding-top: 40px;
+    padding-top: 10px;
     flex-direction: row;
     justify-content: space-around;
     display: flex;
@@ -137,7 +137,7 @@
     width: 80px;
     height: 80px;
     margin-left: 375px;
-    top: 60px;
+    top: 50px;
     font-size: 3em;
     font-weight: bolder;
     text-align: center;
@@ -153,22 +153,47 @@
     transform: translateY(-10px);
 }
 
+footer
+{
+    position: relative;
+    padding-bottom: 20px;
+    width: 150px;
+    margin: 20px;
+    color: var(--font-color);
+    background-color: var(--oi);
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+    left: 45.5%;
+}
+
+footer:hover
+{
+    transform: translateY(-5px);
+}
+
+.git
+{
+    color: var(--font-color);
+}
+
 .theme-light
 {
     --color-primary: #000;
-    --color-secondary: #fff;
-    --color-accent: #000;
+    --color-secondary: rgba(248, 242, 242, 0.781);
+    --color-accent: #121212;
     --shadow-color: rgba(0,0,0,.5);
-    --font-color: #fff;
+    --font-color: #121212;
 }
 
 .theme-dark
 {
     --color-primary: #fff;
-    --color-secondary: #000;
-    --color-accent: #fff;
+    --color-secondary: #121212;
+    --color-accent: rgba(248, 242, 242, 0.781);
     --shadow-color: rgba(248, 242, 242, 0.5);
-    --font-color: #000;
+    --font-color:   rgba(248, 242, 242, 0.5);
 }
 
 @media screen and (max-width: 768px)
@@ -271,7 +296,12 @@
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 155px;
-        top: 45px;
+        margin-left: 150px;
+        top: 50px;
+    }
+
+    footer
+    {
+        left: 26%;
     }
 }
