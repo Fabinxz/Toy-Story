@@ -45,6 +45,7 @@
     background-image: url(../assets/woody.png);
     background-repeat: no-repeat;
     background-position-y: 10px;
+    background-position-x: -20px;
     margin: 15px;
     border-radius: 10px;
     transition: 0.5s;
@@ -88,7 +89,7 @@
     background-image: url(../assets/buzzz.png);
     background-repeat: no-repeat;
     background-position-y: 10px ;
-    background-position-x: 60px;
+    background-position-x: 75px;
     margin: 15px;
     border-radius: 10px;
     transition: 0.5s;
@@ -112,8 +113,8 @@
     display: inline-block;
     width: 80px;
     height: 80px;
-    margin-left: 290px;
-    top: 55px;
+    margin: auto;
+    top: 15px;
     font-size: 3em;
     font-weight: bolder;
     text-align: center;
@@ -127,17 +128,16 @@
 
 footer
 {
-    position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     width: 150px;
-    margin-top: 15px;
     color: var(--font-color);
     background-color: var(--oi);
     font-weight: bold;
     font-size: 2em;
     transition: 0.5s;
     cursor: pointer;
-    left: 46%;
+    margin: auto;
+    margin-top: 15px;
 }
 
 footer:hover
@@ -213,16 +213,16 @@ footer:hover
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 335px;
-        margin-top: 10px;
+        margin: auto;
+        margin-top: 45px;
     }
 
     footer
     {
         margin-top: 0px;
         padding-top: 5px;
-        margin: 15px;
-        left: 37%;
+        margin: auto;
+        margin-bottom: 15px;
     }
 }
 
@@ -279,15 +279,17 @@ footer:hover
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 160px;
-        margin-top: -5px;
+        margin: auto;
+        margin-top: 0px;
+        top: 35px;
     }
 
     footer
     {
         margin-top: 0px;
-        padding-top: 5px;
-        margin: 15px;
-        left: 28%;
+        padding-top: 10px;
+        top: 0px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }

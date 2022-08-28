@@ -39,7 +39,7 @@
 {
     grid-row: 2/4;
     grid-column: 1/2;
-    border-radius: 10px;
+    border-radius: 15px 50px 30px;
     margin: 5px;
     margin-right: 60px;
     background-image: url(../assets/buzzz.png);
@@ -66,7 +66,7 @@ h2
     font-size: 3em;
     text-align: center;
     border: 5px solid var(--color-primary);
-    border-radius: 10px;
+    border-radius: 15px 50px 30px;
     padding-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
@@ -148,8 +148,8 @@ span
     display: inline-block;
     width: 80px;
     height: 80px;
-    margin-left: 290px;
-    top: 45px;
+    margin-left: 300px;
+    top: 55px;
     font-size: 3em;
     font-weight: bolder;
     text-align: center;
@@ -159,6 +159,30 @@ span
     transition: 0.5s;
     box-shadow: 10px 1px 5px var(--shadow-color);
     transform: translateY(-10px);
+}
+
+footer
+{
+    padding-bottom: 0px;
+    width: 150px;
+    color: var(--color-accent);
+    background-color: var(--oi);
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer:hover
+{
+    transform: translateY(-5px);
+}
+
+.git
+{
+    color: var(--color-accent)
 }
 
 .theme-light
@@ -200,8 +224,8 @@ span
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 330px;
-        margin-top: 25px;
+        margin-left: 320px;
+        margin-top: 12px;
     }
 
 
@@ -240,6 +264,14 @@ span
         margin-left: 120px;
         margin-top: 40px;
     }
+
+    footer
+    {
+        margin-top: 0px;
+        padding-top: 0px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -272,6 +304,7 @@ span
         width: 338px;
         background-color: var(--oi);
         background-position-x: 40px;
+        background-position-y: 20px;
         background-image: url(../assets/buzzzm.png);
         margin-top: 35px;
     }
@@ -302,5 +335,13 @@ span
         grid-column: 1/2;
         margin-left: 5px;
         margin-top: 0px;
+    }
+
+    footer
+    {
+        margin-top: 0px;
+        padding-top: 0px;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
