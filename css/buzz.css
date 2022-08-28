@@ -47,14 +47,13 @@
     background-repeat: no-repeat;
     background-position-x: 40px;
     transition: 0.5s;
-    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px var(--box-color));
 }
 
 #buzz:hover
 {
-    transform: translateY(-10px);
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px var(--box-color));
+    transform: translateY(-15px);
 }
 
 h2

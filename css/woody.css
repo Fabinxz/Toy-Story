@@ -48,13 +48,13 @@
     background-position-x: 10px;
     background-position-y: 20px;
     transition: 0.5s;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px var(--box-color));
 }
 
 #woody:hover
 {
     transform: translateY(-15px);
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px var(--box-color));
 }
 
 h2
@@ -273,9 +273,9 @@ span
     {
         grid-row: 3/4;
         grid-column: 1/2;
-        width: 380px;
+        width: 335px;
         background-image: url(/assets/woodym.png);
-        background-position-x: 0px;
+        background-position-x: 10px;
     }
 
     h2

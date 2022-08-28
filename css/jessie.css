@@ -47,14 +47,13 @@
     background-repeat: no-repeat;
     background-position-x: 110px;
     transition: 0.5s;
-    transition: 0.5s;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px var(--box-color));
 }
 
 #jessie:hover
 {
     transform: translateY(-15px);
-    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    filter: drop-shadow(15px 10px 5px var(--box-color));
 }
 
 h2
@@ -273,9 +272,9 @@ span
     {
         grid-row: 3/4;
         grid-column: 1/2;
-        width: 380px;
+        width: 325px;
         background-image: url(/assets/jessiem.png);
-        background-position-x: 50%;
+        background-position-x: 40px;
     }
 
     h2
