@@ -234,7 +234,7 @@
     {
         grid-row: 1/2;
         grid-column: 1/2;
-        width: 360px;
+        width: 400px;
 
     }
 
@@ -271,6 +271,6 @@
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 130px;
+        margin-left: 155px;
     }
 }
