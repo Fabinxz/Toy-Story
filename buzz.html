@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story</title>
+    <link href="./css/buzz.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/logoo.ico">
+</head>
+<body>
+    <div class="container">
+        <a class="title_a" href="index.html"><div id="title"></div></a>
+        <div id="buzz"></div>
+        <h2><span>Buzz Lightyear</span> é um personagem fictício no Toy Story. Buzz é um herói do espaço de acordo com os filmes e figura de ação. Juntamente com Woody, ele é o co-líder do quarto de Andy. Ele também apareceu no filme Buzz Lightyear do Comando Estelar. Seu slogan é "Ao infinito... e além!".<div id="text"></div></h2>
+        <iframe class="video1" width="600" height="340" src="https://www.youtube.com/embed/C9vI19nawq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><div class="video1"></div></iframe>
+        <iframe class="video2" width="600" height="340" src="https://www.youtube.com/embed/KFBi4zISJLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><div class="video2"></div></iframe>
+        <button id="switch" onclick="toggleTheme()"></button>
+    </div>
+    <script>
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        })();
+        
+    </script>
+</body>
+</html>

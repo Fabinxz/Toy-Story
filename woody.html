@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story</title>
+    <link href="./css/woody.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/logoo.ico">
+</head>
+<body>
+    <div class="container">
+        <a class="title_a" href="index.html"><div id="title"></div></a>
+        <div id="woody"></div>
+        <h2><span>Xerife Woody</span> é o brinquedo favorito de Andy desde o "Jardim-de-Infância", com um lugar especial sobre a cama do garoto, e é o líder dos brinquedos no quarto. Em Toy Story 2, revelou-se que ele é baseado no personagem principal de um popular programa dos anos de 1950 "O Rodeio do Woody".<div id="text"></div></h2>
+        <iframe class="video1" width="600" height="340" src="https://www.youtube.com/embed/4c3GITXd4-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><div class="video1"></div></iframe>
+        <iframe class="video2" width="600" height="340" src="https://www.youtube.com/embed/NONzAwlRIVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><div class="video2"></div></iframe>
+        <button id="switch" onclick="toggleTheme()"></button>
+    </div>
+    <script>
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        })();
+        
+    </script>
+</body>
+</html>

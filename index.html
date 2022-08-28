@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/logoo.ico">
+</head>
+<body>
+    <div class="container">
+        <a class="title" href="filmes.html"><div id="title"></div></a>
+        <a class="woody" href="woody.html"><div id="woody"></div></a>
+        <a class="jessie" href="jessie.html"><div id="jessie"></div></a>
+        <a class="buzz" href="buzz.html"><div id="buzz"></div></a>
+        <button id="switch" onclick="toggleTheme()"></button>
+    </div>
+    <script>
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        }
+
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+            } else {
+                setTheme('theme-light');
+            }
+        })();
+        
+    </script>
+</body>
+</html>
