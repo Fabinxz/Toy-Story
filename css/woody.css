@@ -251,7 +251,7 @@ span
 {
     .container
     {
-        grid-template-rows: 160px 800px 1590px 290px 200px 200px;
+        grid-template-rows: 160px 800px 1480px 290px 200px 200px;
         grid-template-columns: 1fr;
     }
 
@@ -274,7 +274,7 @@ span
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        width: 400px;
+        width: 380px;
         background-position-x: -120px;
     }
 
