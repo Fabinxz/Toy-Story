@@ -146,10 +146,6 @@
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 10px 1px 5px var(--shadow-color);
-}
-
-#switch:hover
-{
     transform: translateY(-10px);
 }
 
@@ -243,7 +239,15 @@ footer:hover
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 310px;
+        margin-left: 330px;
+    }
+
+    footer
+    {
+        margin-top: 0px;
+        padding-top: 5px;
+        margin: 15px;
+        left: 38%;
     }
 }
 

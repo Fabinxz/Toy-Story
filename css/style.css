@@ -122,10 +122,6 @@
     cursor: pointer;
     transition: 0.5s;
     box-shadow: 10px 1px 5px var(--shadow-color);
-}
-
-#switch:hover
-{
     transform: translateY(-10px);
 }
 
@@ -176,7 +172,7 @@ footer:hover
 {
     .container
     {
-        grid-template-rows: 160px 850px 850px 850px 160px;
+        grid-template-rows: 160px 200px 850px 850px 850px;
         grid-template-columns: 1fr;
     }
 
@@ -188,34 +184,45 @@ footer:hover
 
     .woody
     {
-        grid-row: 2/3;
+        grid-row: 3/4;
         grid-column: 1/4;
-        width: 695px;
+        width: 737px;
         background-position-x: 25%;
+        background-position-y: 50%;
     }
 
     .jessie
     {
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: 1/2;
-        width: 695px;
+        width: 737px;
         background-position-x: 50%;
+        background-position-y: 50%;
     }
 
     .buzz
     {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 1/2;
-        width: 695px;
+        width: 737px;
         background-position-x: 50%;
+        background-position-y: 50%;
     }
 
     #switch
     {
-        grid-row: 5/6;
+        grid-row: 2/3;
         grid-column: 1/2;
-        margin-left: 320px;
-        margin-top: -12px;
+        margin-left: 335px;
+        margin-top: 10px;
+    }
+
+    footer
+    {
+        margin-top: 0px;
+        padding-top: 5px;
+        margin: 15px;
+        left: 37%;
     }
 }
 
