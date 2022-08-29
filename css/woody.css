@@ -60,11 +60,11 @@ h2
     grid-column: 2/3;
     margin: 5px;
     color: #fff;
-    font-size: 3em;
+    font-size: 2.9em;
     text-align: center;
     border-radius: 15px 50px 30px;
     border: 5px solid var(--color-primary);
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 25px;
     padding-right: 25px;
     transition: 0.5s;
@@ -157,31 +157,6 @@ span
     transform: translateY(-10px);
 }
 
-footer
-{
-    padding-bottom: 0px;
-    width: 150px;
-    margin-top: 15px;
-    color: var(--color-accent);
-    background-color: var(--oi);
-    font-weight: bold;
-    font-size: 2em;
-    transition: 0.5s;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 10px;
-}
-
-footer:hover
-{
-    transform: translateY(-5px);
-}
-
-.git
-{
-    color: var(--color-accent)
-}
-
 .theme-light
 {
     --color-primary: #000;
@@ -206,7 +181,7 @@ footer:hover
 {
     .container
     {
-        grid-template-rows: 160px 200px 800px 810px 300px 350px ;
+        grid-template-rows: 160px 200px 800px 700px 300px 350px ;
         grid-template-columns: 1fr;
     }
 
@@ -261,21 +236,13 @@ footer:hover
         margin-left: 120px;
         margin-top: 40px;
     }
-
-    footer
-    {
-        margin-top: 0px;
-        padding-top: 0px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
 }
 
 @media screen and (max-width: 600px)
 {
     .container
     {
-        grid-template-rows: 160px 200px 500px 720px 290px 240px;
+        grid-template-rows: 160px 200px 500px 730px 290px 240px;
         grid-template-columns: 1fr;
     }
 
@@ -290,8 +257,8 @@ footer:hover
     {
         grid-row: 2/3;
         grid-column: 1/2;
-        margin: auto;
-        margin-top: 20px;
+        margin-left: 150px;
+        margin-top: 15px;
     }
 
     #woody
@@ -330,13 +297,5 @@ footer:hover
         grid-column: 1/2;
         margin-left: 5px;
         margin-top: 0px;
-    }
-
-    footer
-    {
-        margin-top: 0px;
-        padding-top: 0px;
-        margin: auto;
-        margin-bottom: 20px;
     }
 }

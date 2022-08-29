@@ -161,30 +161,6 @@ span
     transform: translateY(-10px);
 }
 
-footer
-{
-    padding-bottom: 0px;
-    width: 150px;
-    color: var(--color-accent);
-    background-color: var(--oi);
-    font-weight: bold;
-    font-size: 2em;
-    transition: 0.5s;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 10px;
-}
-
-footer:hover
-{
-    transform: translateY(-5px);
-}
-
-.git
-{
-    color: var(--color-accent)
-}
-
 .theme-light
 {
     --color-primary: #000;
@@ -264,21 +240,13 @@ footer:hover
         margin-left: 120px;
         margin-top: 40px;
     }
-
-    footer
-    {
-        margin-top: 0px;
-        padding-top: 0px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
 }
 
 @media screen and (max-width: 600px)
 {
     .container
     {
-        grid-template-rows: 160px 200px 500px 670px 300px 250px;
+        grid-template-rows: 160px 200px 500px 680px 300px 250px;
         grid-template-columns: 1fr;
     }
 
@@ -293,6 +261,7 @@ footer:hover
     {
         grid-row: 2/3;
         grid-column: 1/2;
+        margin: auto;
         margin-left: 150px;
         margin-top: 30px;
     }
@@ -335,13 +304,5 @@ footer:hover
         grid-column: 1/2;
         margin-left: 5px;
         margin-top: 0px;
-    }
-
-    footer
-    {
-        margin-top: 0px;
-        padding-top: 0px;
-        margin: auto;
-        margin-bottom: 20px;
     }
 }
